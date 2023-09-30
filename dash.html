@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="dash.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="bootstrap.bundle.js"></script>
+
+</head>
+
+<body>
+
+    <!-- dashboad outer -->
+    <div class="container-fluid">
+
+
+        <div class="row mblock">
+            <div class="col-sm-2 main-l" class="side nav" style="position: fixed;">
+
+
+                <img src="tony.jpg" alt=""
+                    style="height: 110px; width: 110px; border-radius: 50%; position:relative;left:40px; top:15px; box-shadow:0 2px 3px 3px white; ">
+                <nav>
+                    <ul>
+                        <li><a href="dash.html"><i class="fa-solid fa-bookmark"></i> Dashboard</a></li>
+                        <hr>
+                        <li><a href="#"><i class="fa-solid fa-users"></i> Teachers</a></li>
+                        <hr>
+                        <li><a href="students.html""><i class=" fa-solid fa-users-rectangle"></i> Students</a></li>
+                        <hr>
+                        <li><a href="#"> <i class="fa-solid fa-users-gear"></i> Staff</a></li>
+                        <hr>
+
+
+                        <li><a href="#"><i class="fa-solid fa-user-pen"></i> Admission</a></li>
+                        <hr>
+                        <li><a href="#"><i class="fa-solid fa-comment"></i> Messeges</a></li>
+                        <hr>
+                        <li><a href="#"><i class="fa-solid fa-comment"></i> Complaints</a></li>
+
+                    </ul>
+                </nav>
+
+
+            </div>
+
+            <div class="col-sm-10 p-0" style="position:absolute; right:0;">
+
+                <div class="container-fluid">
+                    <div class="row  header sticky-top">
+
+                        <div class="col-sm-6">
+                            <span class="txt1"><span style="color:blue;">@ DashBoard</span> Admin</span>
+                        </div>
+                        <div class="col-sm-5"></div>
+                        <div class="col-sm-1">
+                            <div class="log">
+
+                                <button class="open-button" onclick="openForm()">
+                                    <img src="tony.jpg" alt="" class="logo"></button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-3 card">
+                            <span class="card-t"> <i class="fa-solid fa-users-rectangle"></i> Students</span>
+        
+                            <span class="card-t2" id="count1">0</span>
+                        </div>
+                        <div class="col-sm-3 card">
+                            <span class="card-t"> <i class="fa-solid fa-users"></i> Teachers</span>
+                            <span class="card-t2" id="count2"> 0</span>
+                        </div>
+                        <div class="col-sm-3 card">
+                            <span class="card-t"> <i class="fa-solid fa-pen-to-square"></i> Fill_Forms</span>
+                            <span class="card-t2" id="count3">0</span>
+                        </div>
+                        <div class="col-sm-3 card">
+                            <span class="card-t"> <i class="fa-solid fa-users-gear"></i> Staff</span>
+                            <span class="card-t2" id="count4"> 0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- center Block -->
+
+                <!-- form -->
+
+
+
+                <div class="form-popup" id="myForm">
+                    <form action="/action_page.php" class="form-container">
+                        <button type="button" class="btn cancel" onclick="closeForm()">X</button>
+
+                        <span><img src="tony.jpg" alt="" class="pop_logo"></span>
+
+
+
+                        <label id="poptxt"><b>Tony Stark</b></label>
+                        <br>
+                        <h4 style="text-align: center;"><b>Tony-Stark@gmail.com</b></h3>
+                            <a href="">
+                                <h5 class="tms">Add more Accounts</h5>
+                            </a>
+                            <a href=""><button value="Log_Out" class="btn5"><i
+                                        class="fa-solid fa-arrow-right-from-bracket"></i>
+                                    Log_Out</button></a>
+
+                </div>
+
+
+
+
+
+
+
+
+
+                </form>
+            </div>
+
+            <script>
+                function openForm() {
+                    document.getElementById("myForm").style.display = "block";
+                }
+
+                function closeForm() {
+                    document.getElementById("myForm").style.display = "none";
+                }
+            </script>
+
+            <!-- form -->
+
+        </div>
+        <!-- dashboad outer -->
+
+
+        // note that may be small diffrance in the count 100 be 99 so chack it
+
+        <script>  function numCounter(tagId, maxCount, speed) {
+                var initialNumber = 0;
+                function counter() {
+                    document.getElementById(tagId).innerHTML = initialNumber;
+                    ++initialNumber;
+                }
+                var counterDelay = setInterval(counter, speed);
+                function totalTime() {
+                    clearInterval(counterDelay);
+                }
+                var totalPeriod = speed * (maxCount);
+                setTimeout(totalTime, totalPeriod);
+            }
+
+            numCounter("count1", 400, 5);
+            numCounter("count2", 100, 10);
+            numCounter("count3", 250, 10);
+            numCounter("count4", 25, 30);
+        </script>
+
+
+</body>
+
+</html>

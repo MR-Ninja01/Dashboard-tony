@@ -1,0 +1,270 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+.header
+{
+    min-height: 60px;
+    background-color: lightcoral;
+    
+    
+    
+}
+
+.header .txt1
+{
+  font-size: 35px;
+  margin-left: 35px;
+font-weight: bold;
+}
+
+.logo
+{
+  height: 50px;
+  width: 50px;
+  margin-left:0px;
+  border-radius: 50px;
+  border: 1px solid red;
+}
+
+.btn
+{
+  border: 0;
+}
+
+.main-b
+{
+  min-height:590px;
+  background-color: #3fd0c9;
+  
+}
+
+.mblock
+{}
+
+.main-l
+{
+  background-color:#676767;
+  
+  min-height:670px;
+  
+}
+
+
+nav ul li 
+{ 
+  margin-top: 20px;;
+  
+  list-style-type: none;
+  padding-top: 8px;
+}
+
+hr
+{
+  text-align: center;
+  font-weight: bold;
+}
+nav ul li a
+{
+ 
+  text-align: ;
+  text-decoration: none;
+  font-size: 22px;
+  color:black;
+  font-weight: bold;
+ 
+  list-style-type: none;
+  display: inline-block
+ 
+}
+
+nav ul li a:hover
+{
+  color:white;
+}
+
+
+.card
+{
+  min-height: 120px;
+  background-color: gray;
+  max-width: 210px;
+ float:left;
+border-radius: 10px;
+ margin-left: 45px;
+ margin-top: 10px;
+}
+
+.card:hover
+{
+  background-color:lightcoral;
+}
+
+.card-t
+{
+  font-size: 30px;
+  margin: 0 auto;
+  color:black;
+  margin-top: 2px;
+}
+
+.card-t2
+{
+  font-size: 35px;
+  margin: 0 auto;
+  color:blue;
+  font-weight: bold;
+  margin-top: 2px;
+}
+.card-t2:hover
+{
+  font-size: 40px;
+  transition: 0.54s ease-in;
+}
+
+
+
+/* popup form */
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  
+  position:relative;
+  top: 5px;
+
+  
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: absolute;
+  top:70px;
+  border-radius: 10px;
+  right: 15px;
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  border: 3px solid #f1f1f1;
+  box-shadow: 0 3px 2px 3px #04AA6D;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 320px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background:red;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+  width: 25px;
+  height: 25px;
+  padding: 4px;
+   position: relative;
+  top:-30px;
+  left:245px;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+/* popup form */
+
+
+/* pop_logo */
+
+.pop_logo
+{
+  height: 80px;
+  width: 80px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 50px;
+  left:75px;
+  box-shadow: 0 2px 3px 3px;
+  border:4px dotted orangered;
+}
+
+#poptxt
+{
+  margin-left: 90px;
+  font-weight: bolder;
+  font-size: 25px;
+  margin-top: 5px;
+  
+}
+
+
+
+
+.btn5
+{
+ position: relative;
+  width: 130px;
+ left:80px;
+ height: 25px;
+ border-radius: 10px;
+ background-color: #04AA6D;
+ top:30px;
+ 
+  
+}
+.tms
+{
+  width:260px;
+padding: 3px;
+margin-top: 20px;
+  font-size: 23px;
+  text-align: center;
+  border-radius: 10px;
+  min-height: 40px;
+  box-shadow: 0 2px 2px 2px ;
+  margin: auto;
+  margin-top: 20px;;
+  text-decoration: none;
+  /* background-color: red; */
+}
+/* pop_logo */
+
+a
+{
+  text-decoration: none;
+}

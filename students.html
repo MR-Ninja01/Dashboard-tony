@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/dash.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="js/bootstrap.bundle.js"></script>
+
+</head>
+
+<body>
+
+    <!-- dashboad outer -->
+    <div class="container-fluid">
+        <!-- <div class="row  header">
+
+            <div class="col-sm-6">
+                <span class="txt1"><span style="color:blue;">@ DashBoard</span> Admin</span>
+            </div>
+            <div class="col-sm-5"></div>
+            <div class="col-sm-1">
+                <div class="log">
+                    
+                    <button class="open-button" onclick="openForm()">
+                    <img src="images/tony.jpg" alt="" class="logo"></button>
+
+                </div>
+            </div>
+        </div> -->
+
+        <!-- center Block -->
+        <div class="row mblock">
+            <div class="col-sm-2 main-l" class="side nav" style="position: fixed;">
+
+
+               <img src="images/tony.jpg" alt="" style="height: 110px; width: 110px; border-radius: 50%; position:relative;left:40px; top:15px; box-shadow:0 2px 3px 3px white; ">
+                <nav>
+                    <ul>
+                        <li><a href="dash.html"><i class="fa-solid fa-bookmark"></i> Dashboard</a></li>
+                        <hr>
+                        <li><a href="#"><i class="fa-solid fa-users"></i> Teachers</a></li>
+                        <hr>
+                        <li><a href="#"><i class="fa-solid fa-users-rectangle"></i> Students</a></li>
+                        <hr>
+                        <li><a href="#"> <i class="fa-solid fa-users-gear"></i> Staff</a></li>
+                        <hr>
+                       
+                      
+                        <li><a href="#"><i class="fa-solid fa-user-pen"></i> Admission</a></li>
+                        <hr>
+                        <li><a href="#"><i class="fa-solid fa-comment"></i> Messeges</a></li>
+                        <hr>
+                        <li><a href="#"><i class="fa-solid fa-comment"></i> Complaints</a></li>
+
+                    </ul>
+                </nav>
+
+
+            </div>
+        
+            <div class="col-sm-10 p-0" style="position:absolute; right:0;">
+                
+              <div class="container-fluid">
+                <div class="row  header sticky-top" >
+
+                    <div class="col-sm-6">
+                        <span class="txt1"><span style="color:blue;">@ DashBoard</span> Admin</span>
+                    </div>
+                    <div class="col-sm-5"></div>
+                    <div class="col-sm-1">
+                        <div class="log">
+                            
+                            <button class="open-button" onclick="openForm()">
+                            <img src="images/tony.jpg" alt="" class="logo"></button>
+        
+                        </div>
+                    </div>
+                </div>
+
+              <div class="row"> 
+             <h2 style="color:blue; font-weight:bold; font-size:38px; font-style:italic;text-align:center ;margin-top:10px;"> Student-Information</h2>
+            <table border="4" class="table table-bordered mt-2" style=" width:90%; margin:auto ;border:2px solid black; font-size:20px;text-align:center">
+                <tr>
+                    <th>Roll-no</th>
+                    <th>Name</th>
+                    <th>Program</th>
+                    <th>Branch</th>
+                    <th>Address</th>
+                    <th>Mobile-no</th>
+                    <th>Year</th>
+                </tr>
+                <!-- student data -->
+                <tr>
+                    <td>2001</td>
+                    <td>Roshan</td>
+                    <td>M-tech</td>
+                    <td>Computer-Science</td>
+                    <td> Sultanpur</td>
+                    <td>8556115585</td>
+                    <td>Second Year</td>
+                </tr>
+
+                <tr>
+                    <td>2002</td>
+                    <td>Roshani</td>
+                    <td>B-tech</td>
+                    <td>Inforamtion Technology</td>
+                    <td> Prayagraaj</td>
+                    <td>8558418515</td>
+                    <td>First Year</td>
+                </tr>
+
+                <tr>
+                    <td>2003</td>
+                    <td>Ashad</td>
+                    <td>B-tech</td>
+                    <td>Inforamtion Technology</td>
+                    <td> Vanarashi</td>
+                    <td>8558418515</td>
+                    <td>Final Year</td>
+                </tr>
+
+                <tr>
+                    <td>2004</td>
+                    <td>Imraan</td>
+                    <td>M-tech</td>
+                    <td>Computer Science</td>
+                    <td> Aligarh</td>
+                    <td>9687463155</td>
+                    <td>Firstt Year</td>
+                </tr>
+                <tr>
+                    <td>2005</td>
+                    <td>John Doe</td>
+                    <td>Computer Science</td>
+                    <td>Information Technology</td>
+                    <td>123 Main Street, City</td>
+                    <td>(555) 123-4567</td>
+                    <td>2nd Year</td>
+                </tr>
+                <tr>
+                    <td>2006</td>
+                    <td>Jane Smith</td>
+                    <td>Electrical Engineering</td>
+                    <td>Electronics</td>
+                    <td>456 Elm Street, Town</td>
+                    <td>(555) 987-6543</td>
+                    <td>3rd Year</td>
+                </tr>
+                <tr>
+                    <td>2007</td>
+                    <td>Bob Brown</td>
+                    <td>Business Administration</td>
+                    <td>Finance</td>
+                    <td>789 Oak Street, Village</td>
+                    <td>(555) 456-7890</td>
+                    <td>1st Year</td>
+                </tr>
+
+                <tr>
+                    <td>1003</td>
+                    <td>Bob Brown</td>
+                    <td>Business Administration</td>
+                    <td>Finance</td>
+                    <td>789 Oak Street, Village</td>
+                    <td>(555) 456-7890</td>
+                    <td>1st Year</td>
+                </tr>
+                  
+                <tr>
+                    <td>2002</td>
+                    <td>Roshani</td>
+                    <td>B-tech</td>
+                    <td>Inforamtion Technology</td>
+                    <td> Prayagraaj</td>
+                    <td>8558418515</td>
+                    <td>First Year</td>
+                </tr>
+
+                <tr>
+                    <td>2003</td>
+                    <td>Ashad</td>
+                    <td>B-tech</td>
+                    <td>Inforamtion Technology</td>
+                    <td> Vanarashi</td>
+                    <td>8558418515</td>
+                    <td>Final Year</td>
+                </tr>
+
+                <tr>
+                    <td>2004</td>
+                    <td>Imraan</td>
+                    <td>M-tech</td>
+                    <td>Computer Science</td>
+                    <td> Aligarh</td>
+                    <td>9687463155</td>
+                    <td>Firstt Year</td>
+                </tr>
+
+                <tr>
+                    <td>2006</td>
+                    <td>Jane Smith</td>
+                    <td>Electrical Engineering</td>
+                    <td>Electronics</td>
+                    <td>456 Elm Street, Town</td>
+                    <td>(555) 987-6543</td>
+                    <td>3rd Year</td>
+                </tr>
+                <tr>
+                    <td>2007</td>
+                    <td>Bob Brown</td>
+                    <td>Business Administration</td>
+                    <td>Finance</td>
+                    <td>789 Oak Street, Village</td>
+                    <td>(555) 456-7890</td>
+                    <td>1st Year</td>
+                </tr>
+
+                <tr>
+                    <td>1003</td>
+                    <td>Bob Brown</td>
+                    <td>Business Administration</td>
+                    <td>Finance</td>
+                    <td>789 Oak Street, Village</td>
+                    <td>(555) 456-7890</td>
+                    <td>1st Year</td>
+                </tr>
+                  
+
+            </table>              
+
+
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <!-- center Block -->
+    
+        <!-- form -->
+
+        
+
+    
+    
+    
+    
+    
+    
+    <!-- pop up header form -->
+        <div class="form-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <button type="button" class="btn cancel" onclick="closeForm()">X</button>
+            
+            <span><img src="images/tony.jpg" alt="" class="pop_logo" ></span>
+              
+            <br>
+
+            <label id="poptxt"><b>Tony Stark</b></label>
+                        <br>
+                        <h4 style="text-align: center;"><b>Tony-Stark@gmail.com</b></h3>
+                            <a href="">
+                                <h5 class="tms">Add more Accounts</h5>
+                            </a>
+                            <a href="../index.jsp"><button value="Log_Out" class="btn5"><i
+                                        class="fa-solid fa-arrow-right-from-bracket"></i>
+                                    Log_Out</button></a>
+                
+            </table>
+            
+            
+            
+        
+               
+           
+            
+          </form>
+        </div>
+        
+        <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+        </script>
+          
+        <!-- form -->
+  
+    </div>
+    <!-- dashboad outer -->
+
+
+
+
+</body>
+
+</html>
